@@ -17,7 +17,7 @@ describe ArabicToRoman do
 	it 'returns III for 3' do
 		arabic_to_roman = ArabicToRoman.new
 		result = arabic_to_roman.convert(3)
-		expect(result).to eq "II"
+		expect(result).to eq "III"
 	end
 
 	it 'returns V for 5' do

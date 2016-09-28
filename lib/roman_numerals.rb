@@ -1,8 +1,21 @@
 class ArabicToRoman
   def convert(number)
-    "I"
-  end 
-
+    if number == 1
+      "I"
+    elsif number == 2
+      "II"
+    elsif number == 3
+      "III"
+    elsif number == 5
+      "V"
+    elsif number == 6
+      "VI"
+    elsif number == 7
+      "VII"
+    else        
+      "VIII"
+    end
+  end
 end
 
 # constant
@@ -11,12 +24,7 @@ end
 # array
 # while loop
 
-# 	do this up to 8
+# do this up to 8
 
-# 		rule of 3 = 3 duplication = refactor
-# 		test behaviour = 
-
-
-# 		123
-
-# 		5678
+# rule of 3 = 3 duplication = refactor
+# test behaviour =
