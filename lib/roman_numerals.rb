@@ -4,15 +4,17 @@ class ArabicToRoman
     romanValue = ""
     remaining_number = number
 
-    while remaining_number >= 10
-    	romanValue += "X" and remaining_number -= 10
+    if remaining_number >= 10
+    	romanValue << "X"
+    	remaining_number -= 10
     end
 
 	if remaining_number >= 5
-	  romanValue += "V" and remaining_number -= 5
+	  romanValue << "V"
+	  remaining_number -= 5
 	end
 	   
-    romanValue = "I" * remaining_number
+    romanValue << "I" * remaining_number
     
     return romanValue
   end
