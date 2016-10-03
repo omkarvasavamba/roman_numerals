@@ -1,19 +1,19 @@
 class ArabicToRoman
   def convert(number)
-    if number == 1
-      "I"
-    elsif number == 2
-      "II"
-    elsif number == 3
-      "III"
-    elsif number == 5
-      "V"
-    elsif number == 6
-      "VI"
-    elsif number == 7
-      "VII"
-    else        
-      "VIII"
+
+    romanValue = ""
+    remaining_number = number
+
+    while remaining_number >= 10
+    	romanValue += "X" and remaining_number -= 10
     end
+
+	if remaining_number >= 5
+	  romanValue += "V" and remaining_number -= 5
+	end
+	   
+    romanValue = "I" * remaining_number
+    
+    return romanValue
   end
 end
