@@ -20,6 +20,11 @@ describe ArabicToRoman do
 	  expect(result).to eq "III"
 	end
 
+	it 'returns IV for 4' do
+	  result = arabic_to_roman.convert(4)
+	  expect(result).to eq "IV"
+	end
+
 	it 'returns V for 5' do
 	  result = arabic_to_roman.convert(5)
 	  expect(result).to eq "V"
