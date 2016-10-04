@@ -27,8 +27,6 @@ class ArabicToRoman
       romanValue << "I"
       number -= 1
     end
-
-    romanValue << "I" * number
     
     return romanValue
     
