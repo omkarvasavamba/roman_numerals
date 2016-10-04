@@ -8,6 +8,11 @@ class ArabicToRoman
       number -= 10
     end
 
+    if number >= 9
+      romanValue << "IX"
+      number -= 9
+    end
+
     if number >= 5
       romanValue << "V"
       number -= 5

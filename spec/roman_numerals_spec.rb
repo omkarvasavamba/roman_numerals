@@ -45,6 +45,11 @@ describe ArabicToRoman do
       expect(result).to eq "VIII"
     end
 
+    it 'returns IX for 9' do
+      result = arabic_to_roman.convert(9)
+      expect(result).to eq "IX"
+    end
+
     it 'returns XI for 11' do
 	  result = arabic_to_roman.convert(11)
 	  expect(result).to eq "XI"
