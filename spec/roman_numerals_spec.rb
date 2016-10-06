@@ -70,6 +70,11 @@ describe ArabicToRoman do
 	  expect(result).to eq "XIII"
     end
 
+    it 'returns XIV for 14' do
+	  result = arabic_to_roman.convert(14)
+	  expect(result).to eq "XIV"
+    end
+
     it 'returns XV for 15' do
 	  result = arabic_to_roman.convert(15)
 	  expect(result).to eq "XV"
@@ -89,4 +94,14 @@ describe ArabicToRoman do
 	  result = arabic_to_roman.convert(18)
 	  expect(result).to eq "XVIII"
     end
+
+    it 'returns XIX for 19' do
+	  result = arabic_to_roman.convert(19)
+	  expect(result).to eq "XIX"
+	end
+
+	it 'returns XX for 20' do
+	  result = arabic_to_roman.convert(20)
+	  expect(result).to eq "XX"
+	end
 end
